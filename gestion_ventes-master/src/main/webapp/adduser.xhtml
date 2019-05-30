@@ -56,7 +56,7 @@
 			<ui:include src="/template commons/header.xhtml" />
 		</ui:insert>
 		<!-- END: Header -->
-		<h:form id="userForm" prependId="false">
+		<h:form id="userForm" prependId="false" enctype="multipart/form-data">
 			<!-- begin::Body -->
 			<div
 				class="m-grid__item m-grid__item--fluid m-grid m-grid--ver-desktop m-grid--desktop m-body">
@@ -163,15 +163,15 @@
 												autocomplete="off" />
 										</div>
 									</div>
+										<!-- <div class="form-group m-form__group row">
+										<label class="col-form-label col-lg-3 col-sm-12">télécharger votre photo profile * </label>
+										
+									</div>
 
-									<!-- <div class="form-group m-form__group row">
-										<label class="col-form-label col-lg-3 col-sm-12">
-											Update your image </label>
+									<div class="form-group m-form__group row">
+										
 										<div class="col-lg-4 col-md-9 col-sm-12">
-											<h:inputText class="form-control m-input" id="password_user" pt:type="password" pt:placeholder="enter le mot de passe" pt:data-toggle="m-tooltip"
-											 pt:title="Champ Obligatoire" value="#{ajoutUtilisateur.passwordUtilisateur}" autocomplete="off" />
-											<input type="file" id="file" name="file" />
-											<button id="upload">Upload</button>
+											<h:inputFile value="#{ajoutUtilisateur.uploadedFile}" />
 										</div>
 									</div> -->
 
