@@ -75,14 +75,16 @@ public class AjoutUtilisateurAction {
 			this.addSuccess = false;
 		}
 //		try {
-//			//System.out.println(uploadedFile.getSubmittedFileName());
+//			System.out.println(uploadedFile.getSubmittedFileName());
 //			InputStream input = uploadedFile.getInputStream();
 //			 String fileName = uploadedFile.getSubmittedFileName();
+//			 System.out.println(fileName);
 //			         Files.copy(input, new File(folder, fileName).toPath());
 //			     }
 //			     catch (IOException e) {
 //			         e.printStackTrace();
 //			     }
+		
 	}
 	public Part getUploadedFile() {
 		return uploadedFile;

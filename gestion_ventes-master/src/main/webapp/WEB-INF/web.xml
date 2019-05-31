@@ -29,7 +29,13 @@
     <param-name>BootsFaces_USETHEME</param-name>
     <param-value>default</param-value>
   </context-param>
-  <listener>
+  <!-- <listener>
     <listener-class>com.sun.faces.config.ConfigureListener</listener-class>
-  </listener>
+  </listener> -->
+  
+  <env-entry>
+   <env-entry-name>jsf/ClientSideSecretKey</env-entry-name>
+   <env-entry-type>java.lang.String</env-entry-type>
+   <env-entry-value>am9kZXRlcHV0b2hhY2tlcg==</env-entry-value>
+</env-entry>  
 </web-app>
